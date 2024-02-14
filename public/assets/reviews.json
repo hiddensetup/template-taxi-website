@@ -1,0 +1,19 @@
+{
+    "reviews": [
+        {
+            "text": "I had a fantastic experience with the driver. All drivers were punctual.",
+            "author": "James",
+            "rating": 4
+        },
+        {
+            "text": "Gentileza e dedicação do motorista impressionantes. Viagem confortável. Recomendo!",
+            "author": "Fernanda",
+            "rating": 5
+        },
+        {
+            "text": "Viagem confortável. Motorista simpático deu dicas sobre cidade. Recomendo!",
+            "author": "Luiza",
+            "rating": 4
+        }
+    ]
+}

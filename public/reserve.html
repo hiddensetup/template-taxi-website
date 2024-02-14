@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="theme-color" content="#ffc636">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title> ▷ Transporte Aeropuerto - Taxi 24/7 🚖 </title>
+  <link rel="icon" href="icon.png" type="image/png">
+  <meta name="description"
+    content="Traslados con espera en el aeropuerto de Buenos Aires. Reserva tu viaje para ir del aeropuerto al centro en taxis premium. Book your ride today!">
+  <meta name="keywords" content="taxi, airport transfer, airport taxi, transportation, shuttle, airport shuttle">
+  <meta name="author" content="https://github.com/hiddensetup/">
+  <meta name="robots" content="index">
+  <meta property="og:title" content="Transporte Aeropuerto 24/7 🚖 Taxi transfer service Buenos Aires">
+  <meta property="og:description"
+    content="Traslados con espera en el aeropuerto de Buenos Aires. Reserva tu viaje para ir del aeropuerto al centro en taxis premium. Book your ride today!">
+  <meta property="og:url" content="https://github.com/hiddensetup">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/taxi.css">
+</head>
+<body>
+<section class="light-mapa">
+    <div class="container text-light">
+      <div id="book-a-transfer" class="row py-6">
+        <div class="col-md-8 mx-auto offset-md-3">
+          <h2 id="booking" class="col-11 mx-auto pb-3 display-3 text-center ">
+            Programar traslado al aeropuerto
+          </h2>
+          <p class=" text-light lead">Ingresa tus datos y reserva traslado con espera para ir del Aeropuerto
+            de Buenos Aires al centro 🇦🇷
+          </p>
+          <form>
+            <div class="form-floating mb-3">
+
+              <input type="text" class="form-control rounded-4 form-control-lg" id="inputName" placeholder="Name"
+                required>
+              <label for="inputName" class="form-label">Nombre</label>
+
+            </div>
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control rounded-4 form-control-lg" id="inputSubject"
+                placeholder="Subject" required>
+              <label for="inputSubject" class="form-label">Asunto</label>
+
+            </div>
+            <div class="form-floating mb-3">
+              <textarea style="height: 100px" class="form-control rounded-4 form-control-lg" id="inputMessage"
+                placeholder="Por favor, proporciona detalles del traslado 🚕" required></textarea>
+              <label for="inputMessage" class="form-label">Mensaje</label>
+
+            </div>
+            <div class="text-center">
+              <button type="button" class="rounded-4 btn btn-dark mt-4 btn-lg" onclick="composeEmail()">
+                <i class="me-1 bi-envelope-at"></i> <span class="button-text-schedule"></span>
+              </button>
+
+            </div>
+            <div class="text-center my-3">
+
+              <a class="render-taxi-email small text-decoration-none text-center text-light"
+                href=""></a>
+
+            </div>
+
+
+
+        </div>
+
+
+
+        </form>
+      </div>
+    </div>
+    </div>
+  </section>
+  <footer class="footer py-5">
+    <div id="pediruntaxi" class="container">
+      <div class="row d-flex justify-content-between">
+        <div class="col-md-4">
+          <h5 class="mt-2">SEGURO, CONFIABLE Y EFICIENTE</h5>
+          <ul class="list-unstyled contact-info small">
+            <li class="mb-2"><i class="bi-whatsapp"></i> <span> Retiro | Ezeiza </span> <a
+                class="taxi-phone-rendering-01 text-decoration-none text-muted" href="tel:"> </a>
+            </li>
+            <li class="mb-2"><i class="bi-whatsapp"></i> <span> Aeroparque | Buquebus </span> <a
+                class="taxi-phone-rendering-02 text-decoration-none text-muted" href="tel:"> </a>
+            </li>
+
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5 class="mt-2">Medios de Pago:</h5>
+          <ul class="small list-unstyled text-muted payment-methods">
+            <li>Paypal, pago en efectivo y tarjetas.</li>
+            <li><img style="max-width: 100px;" class="img-fluid m-3"
+                src="assets/media/brandImages/mercado-pago-logo-CC340D0497-seeklogo.com.png"></li>
+          </ul>
+        </div>
+        <div class="col-md-4 text-muted">
+          <p class=" mt-2 mb-0 "><span class="taxi-brand-rendering"></span> &copy; </p>
+          <small>https://<span class="taxi-brand-rendering"></span>.com.ar - Transportes - Del Aeropuerto
+            de Ezeiza a Buenos Aires</small>
+          <ul class="list-unstyled">
+            <li><a class="text-primary facebook-link-rendering" href="" target="_blank"><i
+                  class="bi-facebook fs-4 mx-2"></i></a> <a class="text-danger instagram-link-rendering" href=""
+                target="_blank"><i class="bi-instagram fs-4 mx-2"></i></a> <a class="twitter-link-rendering text-info"
+                href="" target="_blank"><i class="bi-twitter fs-4 mx-2"></i></a> <a class="tiktok-link-rendering"
+                href="" target="_blank"><i class="bi-tiktok text-dark fs-4 mx-2"></i></a>
+                <button type="button" class="mt-2 nav-link" id="downloadBtn"><small>Download Sitemap</small></button>
+
+              </li>
+          </ul>
+
+
+          <script type="text/javascript"
+            src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/booking.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+    integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+    crossorigin="anonymous"></script>
+</body>
+</html>
